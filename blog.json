@@ -1,0 +1,55 @@
+[
+    {
+        "id": "01",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqL5PPNbln-IjCdRDVMhxcU9m-00yhT2Aiw&usqp=CAU",
+        "title": "Difference between SQL and NoSQL",
+        "description": "SQL is the programming language used to interface with relational databases. (Relational databases model data as records in rows and tables with logical links between them). NoSQL is a class of DBMs that are non-relational and generally do not use SQL.",
+        "author": "Bramus",
+        "authorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRRlN2La_MZTHxZSW64VNvWW-4ftEbR_tF3w&usqp=CAU",
+        "date": "Oct 25, 2022"
+    },
+    {
+        "id": "02",
+        "imageURL": "https://www.appknox.com/hs-fs/hubfs/JWT.jpg?width=1999&name=JWT.jpg",
+        "title": "What is JWT, and how does it work?",
+        "description": "What is JWT (JSON Web Token)? JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object. It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP).",
+        "authorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9Ly0NnTg--JQy4CSMOS3JfoLEnTsVpFzx47VGIQ-Nw-qt5qNdqh8eiGYXa_Bj23iQ4I&usqp=CAU",
+        "date": "Aug 18, 2022"
+    },
+    {
+        "id": "03",
+        "imageURL": "https://www.atliq.com/wp-content/uploads/2022/06/Know-the-difference-between-javascript-and-node-js-1-1-1.jpg",
+        "title": "What is the difference between javascript and Node JS?",
+        "description": "JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine installed. Node. js, on the other hand, is an interpreter or execution environment for the JavaScript programming language",
+        "author": "Thomas Steiner",
+        "authorPhoto": "https://s7280.pcdn.co/wp-content/uploads/2018/10/application-developer.jpg.optimal.jpg",
+        "date": "Oct 11, 2022"
+    },
+    {
+        "id": "04",
+        "imageURL": "https://images.ctfassets.net/aq13lwl6616q/7cS8gBoWulxkWNWEm0FspJ/c7eb42dd82e27279307f8b9fc9b136fa/nodejs_cover_photo_smaller_size.png",
+        "title": "How does Node JS handle multiple requests at the same time?",
+        "description": "NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes them.",
+        "author": "Jeremay Wagner",
+        "authorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1dK0EAMVn3xKVmc9n8A5NU0MB3vCsur0Li7TD5gmXJLXswFFD8PyPVQTRPMU8mJkzzc&usqp=CAU",
+        "date": "Sep 29, 2022"
+    },
+    {
+        "id": "05",
+        "imageURL": "https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/vzvc5Ep1blYUQMYYnAKT.jpg?auto=format&w=571",
+        "title": "Speedy CSS Tip! Animated Loader",
+        "description": "Let's make an animated CSS loader with scoped custom properties and animation-timing-function",
+        "author": "Jhey Tompkins",
+        "authorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_F2KCZliiwKA1s66NJR1T9-hCysxGL_DMDsKLs19uzObF6Zh48adkzSCGftQFUB55ls&usqp=CAU",
+        "date": "Sep 22, 2022"
+    },
+    {
+        "id": "06",
+        "imageURL": "https://web-dev.imgix.net/image/kheDArv5csY6rvQUJDbWRscckLr1/tRG45IUUaywMyn4CtTR2.jpg?auto=format&w=571",
+        "title": "Building the main navigation for a website",
+        "description": "This tutorial describes how to build an accessible main navigation of a website. You learn about semantic HTML, accessibility, and how using ARIA attributes can sometimes do more harm than good.",
+        "author": "Manuel Matuzović",
+        "authorPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuK3EdElbT-E590tc29Vn-MDSeb1drhyJ7zY1o8DoTZMKdun3SeU__3ZsS2iiOZt-Bdh4&usqp=CAU",
+        "date": "Sep 7, 2022"
+    }
+]
