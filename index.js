@@ -32,6 +32,7 @@ async function run(){
     try{
         const allCarsData = client.db('carsHub').collection('carsCollection');
         const reviewCollection = client.db('carsHub').collection('reviews');
+        const usersCollection = client.db('carsHub').collection('users');
 
         app.get('/reviews', async(req, res) => {
             let query = {};
@@ -43,7 +44,19 @@ async function run(){
             const cursor = reviewCollection.find(query);
             const reviews = await cursor.toArray();
             res.send(reviews);
-        })
+        });
+        
+        app.get('/cars/:id', (req, res) => {
+            const id = req.params.id;
+            if(id === "10"){
+                res.send(carsData);
+            }
+            else{
+                const category_cars =carsData.filter(n => n.category_id === id)
+                res.send(category_cars);
+            }
+            
+        });
 
         app.post('/reviews', async(req, res) => {
             const review = req.body;
@@ -56,6 +69,13 @@ async function run(){
             const query = {_id: ObjectId(id)};
             const result = await reviewCollection.deleteOne(query);
             res.send(result)
+        });
+
+        app.post('/users', async(req, res) => {
+            const user = req.body;
+            const result = await usersCollection.insertOne(user);
+            res.send(result)
+
         })
 
     }
@@ -71,17 +91,17 @@ app.get('/', (req, res) => {
     res.send('resell market server running')
 });
 
-app.get('/category/:id', (req, res) => {
-    const id = req.params.id;
-    if(id === "10"){
-        res.send(carsData);
-    }
-    else{
-        const category_cars =carsData.filter(n => n.category_id === id)
-        res.send(category_cars);
-    }
+// app.get('/category/:id', (req, res) => {
+//     const id = req.params.id;
+//     if(id === "10"){
+//         res.send(carsData);
+//     }
+//     else{
+//         const category_cars =carsData.filter(n => n.category_id === id)
+//         res.send(category_cars);
+//     }
     
-});
+// });
 
 app.listen(port, () => {
     console.log(`resell market running on port ${port}`)
