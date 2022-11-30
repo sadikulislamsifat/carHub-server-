@@ -57,7 +57,14 @@ async function run(){
             const paymentOrder = await bookingCollection.findOne(query);
             res.send(paymentOrder)
 
-        })
+        });
+
+        app.get('/users/admin/:email', async (req, res) => {
+			const email = req.params.email;
+			const query = { email }
+			const user = await usersCollection.findOne(query);
+			res.send({ isAdmin: user?.role === 'Admin' });
+		})
 
         // // payment option
 		// app.post("/create-payment-intent", async (req, res) => {
@@ -175,6 +182,15 @@ async function run(){
             const allBuyers = await usersCollection.find(query).toArray();
             res.send(allBuyers)
         })
+
+        app.get('/admin/:email', async(req, res) => {
+            const email = req.params.email;
+            const query = {email:email };
+            const admin = await usersCollection.findOne(query);
+            res.send(admin)
+        })
+
+       
 
         app.get('/users', async(req, res) => {
             const query = {};
